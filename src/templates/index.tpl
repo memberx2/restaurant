@@ -9,28 +9,24 @@
     </head>
     <body>
         {% import "partials/layouts/header.tpl" as l_header %}
+        {% import "partials/layouts/hero.tpl" as l_hero %}
+        {% import "partials/slider-fav.tpl" as p_slider_fav %}
+        {% import "partials/icons-section.tpl" as p_icons_section %}
+        {% import "partials/layouts/organic-food.tpl" as l_organic_food %}
+        {% import "partials/layouts/welcome.tpl" as l_welcome %}
+        {% import "partials/layouts/history.tpl" as l_history %}
+        {% import "partials/quote-section.tpl" as p_quote %}
+        {% import "partials/layouts/menu.tpl" as l_menu %}
 
         {{ l_header.render() }}
-        <main class="l-main">
-            <div class="l-inner">
-                <div class="l-main__head">
-                    <div class="l-main__head__title">
-                        <h2>Page Content</h2>
-                    </div>
-                </div>
-                <div class="l-main__content" spacing="top5 tablet(top3) phone(top1)" offset="tablet(top3) left2 desktop-small(left1)">
-                    <pre class="html"><code>{% filter escape %}{% include "partials/main-nav.tpl" %}{% endfilter %}</code></pre>
-                    {% include "partials/main-nav.tpl" %}
-                </div>
-            </div>
-        </main>
-        <footer class="l-footer" spacing="top2 tablet(top1) left5 tablet(left3)">
-            <div class="l-inner">
-                <p>
-                    &copy; 2016 {{ author }}
-                </p>
-            </div>
-        </footer>
+        {{ l_hero.render() }}       
+        {{ p_slider_fav.render() }}
+        {{ p_icons_section.render() }}
+        {{ l_organic_food.render() }}
+        {{ l_welcome.render() }}
+        {{ l_history.render() }}
+        {{ p_quote.render() }}
+        {{ l_menu.render() }}
         <script src="./static/js/app.js"></script>
     </body>
 </html>

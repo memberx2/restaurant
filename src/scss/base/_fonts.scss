@@ -1,3 +1,14 @@
 /* ==========================================================================
    Webfonts
    ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css?family=Average|Montserrat:400,700&subset=latin-ext');
+
+@font-face {
+    font-family: 'wild_youthregular';
+    src: url('../fonts/wildyouth-regular-webfont.woff2') format('woff2'),
+         url('../fonts/wildyouth-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
