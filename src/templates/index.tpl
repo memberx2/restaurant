@@ -10,6 +10,7 @@
     <body>
         {% import "partials/layouts/header.tpl" as l_header %}
         {% import "partials/layouts/hero.tpl" as l_hero %}
+        {% import "partials/layouts/header-fixed.tpl" as l_header_fixed %}
         {% import "partials/slider-fav.tpl" as p_slider_fav %}
         {% import "partials/icons-section.tpl" as p_icons_section %}
         {% import "partials/layouts/organic-food.tpl" as l_organic_food %}
@@ -27,24 +28,50 @@
         {% import "partials/layouts/customers-quotes.tpl" as l_customers_quotes %}
         {% import "partials/layouts/newsletter.tpl" as l_newsletter %}
 
-        {{ l_header.render() }}
-        {{ l_hero.render() }}       
-        {{ p_slider_fav.render() }}
-        {{ p_icons_section.render() }}
-        {{ l_organic_food.render() }}
-        {{ l_welcome.render() }}
-        {{ l_history.render() }}
-        {{ p_quote.render() }}
-        {{ l_menu.render() }}
-        {{ l_our_menu.render() }}
-        {{ l_hours.render() }}
-        {{ l_ocd.render() }}
-        {{ l_ocl.render() }}
-        {{ l_reservation_form.render() }}
-        {{ l_reservation_info.render() }}
-        {{ l_customers_slider.render() }}
-        {{ l_customers_quotes.render() }}
-        {{ l_newsletter.render() }}
+
+        <div class="top">
+            <div class="inner">
+                <div class="top__container">
+                    <p class="top__adress"><span class="icon-font"></span>New Scotland Yard, 8-10 Broadway, Westminster, London SW1H 0BG</p>
+                    {{ p_icons_section.render() }}
+                </div>
+            </div>
+        </div>
+        <header class="header">
+            <div class="inner">
+                {{ l_header.render() }}
+            </div>
+        </header>
+        <section class="hero">
+            <div class="inner">
+                {{ l_hero.render() }}
+            </div>
+        </section>
+        <section class="header-fixed">
+            <div class="inner">
+                {{ l_header_fixed.render() }}
+            </div>
+        </section>
+        <section class="best-cuisine">
+            {{ p_slider_fav.render() }} 
+        </section>
+        <div class="white-icons">      
+            {{ p_icons_section.render() }}
+        </div>
+            {{ l_organic_food.render() }}
+            {{ l_welcome.render() }}
+            {{ l_history.render() }}
+            {{ p_quote.render() }}
+            {{ l_menu.render() }}
+            {{ l_our_menu.render() }}
+            {{ l_hours.render() }}
+            {{ l_ocd.render() }}
+            {{ l_ocl.render() }}
+            {{ l_reservation_form.render() }}
+            {{ l_reservation_info.render() }}
+            {{ l_customers_slider.render() }}
+            {{ l_customers_quotes.render() }}
+            {{ l_newsletter.render() }}
         <script src="./static/js/app.js"></script>
     </body>
 </html>

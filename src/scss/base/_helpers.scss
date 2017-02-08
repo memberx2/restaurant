@@ -4,6 +4,16 @@
 
 /* Layout oriented helpers
    ========================================================================== */
+
+.inner {
+    width: $size_inner;
+    margin: 0 auto;
+}
+
+.alt-text {
+    display: none;
+}
+
 %helper--inner {
     width: 100%;
     max-width: $size_inner;

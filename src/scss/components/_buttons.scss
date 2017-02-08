@@ -2,13 +2,28 @@
    Buttons
    ========================================================================== */
 
-// .c-btn {
-//     cursor: pointer;
+.button {
+	background-color: $color_gold;
+	height: 50px;
+	width: 172px;
+	text-transform: uppercase;
+	color: $color_black;
+	font-size: 15px;
+	text-align: center;
+	font-family: $font_montserrat;
+	display: block;
+	padding-top: 15px;
+	cursor: pointer;
+	&:hover {
+		background-color: $color_dark_grey;
+		color: $color_gold;
+	}
 
-//     border: none;
-//     .c-label {
-//         width: 100%;
+	&--hero {
+		margin: 85px auto 226px;
 
-//         text-align: center;
-//     }
-// }
+	}
+	&--slider-fav {
+		margin-top: 44px;
+	}
+}

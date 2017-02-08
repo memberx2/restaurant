@@ -1,0 +1,36 @@
+/* ==========================================================================
+   Hero
+   ========================================================================== */
+
+.hero {
+	background-color: $color_grey;
+	height: 100%;
+	width: 100%;
+	text-align: center;
+	padding: 286px 0 40px;
+	&__subtitle {
+		color: $color_gold;
+		font-family: $font_wild_youth;
+		font-size: 50px;
+		line-height: 50px;
+	}
+	&__title {
+		font-size: 76px;
+		color: $color_white;
+		font-weight: 100;
+		line-height: 76px;
+	}
+	&__adress {
+		font-size: 16px;
+		color: $color_white;
+		font-weight: 100;
+		position: relative;
+		&:after {
+			content: url(../img/arrow.png);
+			position: absolute;
+			left: 50%;
+			transform: translate(-50%);
+			top: 50px;
+		}
+	}
+}

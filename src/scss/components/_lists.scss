@@ -1,0 +1,35 @@
+/* ==========================================================================
+   Lists
+   ========================================================================== */
+
+/* ==========================================================================
+   Icons section
+   ========================================================================== */
+
+.icons {
+    &--list {
+        display: flex;
+        flex-direction: row;
+
+        width: 84px;
+
+        font-size: 15px;
+
+        color: $color_black;
+
+        justify-content: space-between;
+        .white-icons & {
+            width: 154px;
+            margin: 0 auto;
+
+            font-size: 20px;
+        }
+    }
+    &--link {
+        &:hover {
+            .white-icons & {
+                color: $color_gold;
+            }
+        }
+    }
+}

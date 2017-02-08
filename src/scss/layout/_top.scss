@@ -1,0 +1,16 @@
+/* ==========================================================================
+   Top
+   ========================================================================== */
+
+.top {
+    width: 100%;
+    height: 100%;
+
+    background-color: $color_gold;
+    &__container {
+        display: flex;
+        flex-direction: row;
+
+        justify-content: space-between;
+    }
+}

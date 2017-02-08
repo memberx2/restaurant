@@ -1,3 +1,25 @@
 /* ==========================================================================
    Logos
    ========================================================================== */
+
+.header {
+    &__logo {
+        display: block;
+
+        width: 44px;
+        height: 39px;
+
+        background-image: url(../img/header-logo.png);
+    }
+    &--fixed {
+    	&__logo {
+    		display: block;
+
+        width: 117px;
+        height: 62px;
+
+        background-image: url(../img/header-logo2.png);
+        margin: 0 auto;
+    	}
+    }
+}
