@@ -3,27 +3,41 @@
    ========================================================================== */
 
 .button {
-	background-color: $color_gold;
-	height: 50px;
-	width: 172px;
-	text-transform: uppercase;
-	color: $color_black;
-	font-size: 15px;
-	text-align: center;
-	font-family: $font_montserrat;
-	display: block;
-	padding-top: 15px;
-	cursor: pointer;
-	&:hover {
-		background-color: $color_dark_grey;
-		color: $color_gold;
-	}
+    display: block;
 
-	&--hero {
-		margin: 85px auto 226px;
+    width: 172px;
+    height: 50px;
+    padding-top: 15px;
 
-	}
-	&--slider-fav {
-		margin-top: 44px;
-	}
+    font-family: $font_montserrat;
+    font-size: 15px;
+
+    cursor: pointer;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: $color_black;
+    background-color: $color_gold;
+    &:hover {
+        color: $color_gold;
+        background-color: $color_dark_grey;
+    }
+    &--hero {
+        margin: 85px auto 226px;
+    }
+    &--slider-fav {
+        margin-top: 44px;
+    }
+    &--organic-food {
+        z-index: 20;
+
+        margin: 44px auto 0;
+
+        border: 1px solid $color_black;
+        background-color: transparent;
+        &:hover {
+            color: $color_white;
+            background-color: $color_black;
+        }
+    }
 }

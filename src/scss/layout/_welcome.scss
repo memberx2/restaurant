@@ -1,0 +1,90 @@
+/* ==========================================================================
+   Welcome
+   ========================================================================== */
+
+.welcome {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: $color_light_grey;
+    padding: 94px 0 108px;
+    &__container {
+        position: relative;
+
+        display: flex;
+
+        width: 100%;
+        height: 400px;
+    }
+    &__list {
+        display: flex;
+        flex-direction: row;
+
+        width: 572px;
+        height: 100%;
+
+        justify-content: space-between;
+    }
+    &__item {
+        display: block;
+
+        width: 270px;
+        height: 100%;
+
+        background-color: $color_dark_grey_bg;
+    }
+    &__text-container {
+        position: relative;
+        z-index: 20;
+        top: 50%;
+        left: -50px;
+
+        display: block;
+
+        width: 650px;
+        height: 312px;
+        
+
+        transform: translateY(-50%);
+
+        background-color: $color_white;
+    }
+    &__border {
+		display: block;
+		width: 484px;
+		height: 358px;
+		position: absolute;
+		border-width: 1px 1px 1px 0; 
+		border-style: solid; 
+		border-color: $color_gold;
+		left: 50px;
+		top: -24px;
+		z-index: 10;
+	}
+    &__title {
+        margin-top: 34px;
+
+        font-family: $font_wild_youth;
+        font-size: 45px;
+
+        color: $color_gold;
+    }
+    &__subtitle {
+        font-family: $font_montserrat;
+        font-size: 36px;
+        font-weight: bold;
+        line-height: 36px;
+
+        text-transform: uppercase;
+    }
+    &__description {
+        width: 516px;
+        margin-top: 44px;
+
+        font-size: 15px;
+
+        text-align: left;
+    }
+}

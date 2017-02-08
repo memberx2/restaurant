@@ -58,8 +58,14 @@
         <div class="white-icons">      
             {{ p_icons_section.render() }}
         </div>
+        <section class="organic-food">
             {{ l_organic_food.render() }}
-            {{ l_welcome.render() }}
+        </section>
+        <section class="welcome">
+            <div class="inner">
+                {{ l_welcome.render() }}
+            </div>
+        </section>
             {{ l_history.render() }}
             {{ p_quote.render() }}
             {{ l_menu.render() }}
