@@ -116,7 +116,11 @@
                 {{ l_customers_slider.render() }}
             </div>
         </section>
-            {{ l_customers_quotes.render() }}
+        <section class="customers">
+            <div class="inner">
+                {{ l_customers_quotes.render() }}
+            </div>
+        </section>
             {{ l_newsletter.render() }}
         <script src="./static/js/app.js"></script>
     </body>
