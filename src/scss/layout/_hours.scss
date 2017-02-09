@@ -11,7 +11,7 @@
 
     background-color: $color_dark;
     &--lunch {
-    	margin-top: 36px;
+        margin-top: 36px;
     }
     &__title {
         font-family: $font_wild_youth;
@@ -42,12 +42,13 @@
 
         color: $color_white;
         &--time {
+            margin-top: 14px;
+
             font-size: 15px;
             font-weight: normal;
+            line-height: 25px;
 
             color: $color_black;
-            line-height: 25px;
-            margin-top: 14px;
         }
     }
     &__container {
