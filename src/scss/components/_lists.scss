@@ -81,6 +81,77 @@
     }
 }
 
+.ocd {
+    &__chefs-list {
+        display: flex;
+        flex-direction: row;
+
+        margin-top: 102px;
+
+        justify-content: space-between;
+    }
+    &__chef {
+        width: 272px;
+
+        text-align: center;
+    }
+    &__chef-name {
+        margin-top: 50px;
+
+        font-family: $font_montserrat;
+        font-size: 16px;
+        font-weight: bold;
+
+        text-transform: uppercase;
+
+        color: $color_white;
+    }
+    &__chef-role {
+        font-size: 15px;
+        line-height: 15px;
+
+        color: $color_gold;
+    }
+    &__chef-description {
+        padding: 0 25px;
+
+        font-size: 15px;
+
+        color: $color_white;
+    }
+}
+
+.ocl {
+    &__chefs-list {
+        display: flex;
+        flex-direction: row;
+
+        margin-top: 102px;
+
+        justify-content: center;
+    }
+    &__chef {
+        width: 390px;
+    }
+    &__chef-name {
+        margin-top: 50px;
+
+        font-family: $font_montserrat;
+        font-size: 16px;
+        font-weight: bold;
+
+        text-transform: uppercase;
+
+        color: $color_black;
+    }
+    &__chef-role {
+        font-size: 15px;
+        margin-top: 5px;
+
+        color: $color_gold;
+    }
+}
+
 .icons-chefs {
     &__list {
         position: relative;
@@ -89,11 +160,16 @@
         display: flex;
         flex-direction: row;
 
-        width: 40%;
         margin: 50px 0;
 
         transform: translate(-50%);
 
         justify-content: space-between;
+        .ocd & {
+            width: 40%;
+        }
+        .ocl & {
+            width: 25%;
+        }
     }
 }

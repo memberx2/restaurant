@@ -1,15 +1,17 @@
 /* ==========================================================================
-   Our chefs - dark background
+   Our chefs - light background
    ========================================================================== */
 
-.ocd {
+.ocl {
     display: block;
 
     width: 100%;
     height: 100%;
-    padding: 84px 0 96px;
+    padding: 90px 0 42px;
 
-    background-color: $color_darker_grey;
+    text-align: center;
+
+    background-color: $color_white;
     &__title {
         font-family: $font_wild_youth;
         font-size: 45px;
@@ -28,6 +30,13 @@
         text-align: center;
         text-transform: uppercase;
 
-        color: $color_white;
+        color: $color_black;
+    }
+    &__description {
+        font-size: 15px;
+        font-weight: normal;
+
+        color: $color_black;
+        margin-top: 46px;
     }
 }

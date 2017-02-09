@@ -96,7 +96,11 @@
                 {{ l_ocd.render() }}
             </div>
         </section>
-            {{ l_ocl.render() }}
+        <section class="ocl">
+            <div class="inner">
+                {{ l_ocl.render() }}
+            </div>
+        </section>
             {{ l_reservation_form.render() }}
             {{ l_reservation_info.render() }}
             {{ l_customers_slider.render() }}

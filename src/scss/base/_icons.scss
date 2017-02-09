@@ -27,9 +27,11 @@
 }
 
 .icon-chefs {
+    font-size: 15px;
     .ocd & {
-        font-size: 15px;
-
         color: $color_gold;
+    }
+    .ocd & {
+        color: $color_black;
     }
 }
