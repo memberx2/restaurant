@@ -121,7 +121,11 @@
                 {{ l_customers_quotes.render() }}
             </div>
         </section>
-            {{ l_newsletter.render() }}
+        <section class="newsletter">
+            <div class="inner">
+                {{ l_newsletter.render() }}
+            </div>
+        </section>
         <script src="./static/js/app.js"></script>
     </body>
 </html>

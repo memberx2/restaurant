@@ -45,7 +45,21 @@
     }
 }
 
-
+.newsletter {
+    &__form {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        width: 470px;
+        margin: 100px auto 0;
+    }
+    &__email {
+        width: 268px;
+        padding-left: 15px;
+        border: 1px solid $color_black;
+        color: $color_black;
+    }
+}
 
 
 
