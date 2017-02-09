@@ -1,0 +1,40 @@
+.trigger {
+    position: relative;
+    //top: 50%;
+
+    display: block;
+
+    width: 16px;
+    height: 3px;
+    //transform: translateY(-50%);
+
+    background-color: $color_white;
+    .header2 &,
+    .header3 & {
+        display: none;
+    }
+    &:before {
+        position: absolute;
+        top: -6px;
+        left: 0;
+
+        width: 16px;
+        height: 3px;
+
+        content: '';
+
+        background-color: $color_white;
+    }
+    &:after {
+        position: absolute;
+        top: 6px;
+        left: 0;
+
+        width: 16px;
+        height: 3px;
+
+        content: '';
+
+        background-color: $color_white;
+    }
+}

@@ -1,0 +1,152 @@
+.hero {
+    &__subtitle {
+        font-family: $font_wild_youth;
+        font-size: 50px;
+        line-height: 50px;
+
+        color: $color_gold;
+    }
+    &__title {
+        font-size: 76px;
+        font-weight: 100;
+        line-height: 76px;
+
+        color: $color_white;
+    }
+    &__adress {
+        position: relative;
+
+        font-size: 16px;
+        font-weight: 100;
+
+        color: $color_white;
+        &:after {
+            position: absolute;
+            top: 50px;
+            left: 50%;
+
+            content: url(../img/arrow.png);
+            transform: translate(-50%);
+        }
+    }
+}
+
+.best-cuisine {
+    &__title {
+        font-family: $font_wild_youth;
+        font-size: 45px;
+
+        color: $color_gold;
+    }
+    &__subtitle {
+        font-family: $font_montserrat;
+        font-size: 36px;
+        font-weight: bold;
+        line-height: 36px;
+
+        text-transform: uppercase;
+
+        color: $color_white;
+    }
+    &__description {
+        width: 396px;
+        margin-top: 44px;
+
+        font-size: 15px;
+
+        text-align: left;
+
+        color: $color_white;
+    }
+}
+
+.organic-food {
+    &__title {
+        position: relative;
+
+        padding-top: 100px;
+
+        font-family: $font_montserrat;
+        font-size: 36px;
+        font-weight: bold;
+
+        text-transform: uppercase;
+        &:after {
+            position: absolute;
+            bottom: -50px;
+            left: 50%;
+
+            content: url(../img/arrow.png);
+            transform: translate(-50%);
+        }
+    }
+    &__description {
+        width: 572px;
+        margin: 80px auto 0;
+
+        font-size: 15px;
+    }
+}
+
+.welcome {
+    &__title {
+        margin-top: 34px;
+
+        font-family: $font_wild_youth;
+        font-size: 45px;
+
+        color: $color_gold;
+    }
+    &__subtitle {
+        font-family: $font_montserrat;
+        font-size: 36px;
+        font-weight: bold;
+        line-height: 36px;
+
+        text-transform: uppercase;
+    }
+    &__description {
+        width: 516px;
+        margin-top: 44px;
+
+        font-size: 15px;
+
+        text-align: left;
+    }
+}
+
+.history {
+    &__title {
+        font-family: $font_wild_youth;
+        font-size: 50px;
+        font-weight: normal;
+
+        color: $color_gold;
+    }
+    &__subtitle {
+        position: relative;
+
+        font-family: $font_montserrat;
+        font-size: 36px;
+        font-weight: bold;
+
+        text-transform: uppercase;
+
+        color: $color_white;
+        &:after {
+            position: absolute;
+            top: 50px;
+            left: 0;
+
+            content: url(../img/arrow.png);
+        }
+    }
+    &__description {
+        width: 570px;
+        margin-top: 80px;
+
+        font-size: 15px;
+
+        color: $color_white;
+    }
+}

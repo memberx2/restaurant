@@ -2,24 +2,28 @@
    Logos
    ========================================================================== */
 
-.header {
-    &__logo {
-        display: block;
+.header1__logo,
+.header3__logo {
+    display: block;
 
-        width: 44px;
-        height: 39px;
+    width: 44px;
+    height: 39px;
 
-        background-image: url(../img/header-logo.png);
-    }
-    &--fixed {
-    	&__logo {
-    		display: block;
+    background-image: url(../img/header-logo.png);
+}
 
-        width: 117px;
-        height: 62px;
 
-        background-image: url(../img/header-logo2.png);
-        margin: 0 auto;
-    	}
-    }
+.header2__logo {
+    display: block;
+
+    width: 117px;
+    height: 62px;
+    margin: 0 auto;
+
+    background-image: url(../img/header-logo2.png);
+}
+
+.header3__logo {
+    position: relative;
+    top: -9px;
 }

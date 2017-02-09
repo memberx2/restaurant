@@ -5,6 +5,107 @@
 /* ==========================================================================
    Icons section
    ========================================================================== */
+.header1 {
+    &__navigation {
+        display: flex;
+        flex-direction: row;
+
+        justify-content: space-between;
+        align-content: flex-end;
+        &__item {
+            position: relative;
+            top: 50%;
+
+            margin: 0 21px;
+
+            transform: translateY(-25%);
+            &:hover {
+                box-sizing: border-box;
+
+                border-bottom: 2px solid $color_gold;
+                &.header1__navigation__menu {
+                    border: 0;
+                }
+            }
+        }
+        &__menu {
+            top: 29px;
+        }
+    }
+}
+
+.header2 {
+    &__navigation {
+        display: flex;
+        flex-direction: row;
+
+        margin-top: 40px;
+
+        justify-content: space-between;
+        &__item {
+            position: relative;
+            top: 50%;
+
+            height: 32px;
+            margin-right: 42px;
+
+            transform: translateY(-25%);
+            &:hover {
+                box-sizing: border-box;
+
+                border-bottom: 2px solid $color_gold;
+            }
+        }
+    }
+}
+
+.header3 {
+    &__navigation {
+        display: flex;
+        flex-direction: row;
+
+        margin-top: 40px;
+
+        justify-content: space-between;
+        &__item {
+            position: relative;
+            top: 50%;
+
+            height: 32px;
+            margin-right: 42px;
+
+            transform: translateY(-25%);
+            &:hover {
+                box-sizing: border-box;
+
+                border-bottom: 2px solid $color_gold;
+                &.header3__navigation__item__logo {
+                    border: 0;
+                }
+            }
+        }
+    }
+}
+
+.welcome {
+    &__list {
+        display: flex;
+        flex-direction: row;
+
+        width: 572px;
+        height: 100%;
+
+        justify-content: space-between;
+    }
+    &__item {
+        display: block;
+
+        width: 270px;
+        height: 100%;
+
+        background-color: $color_dark_grey_bg;
+    }
+}
 
 .icons {
     &--list {
@@ -145,8 +246,9 @@
         color: $color_black;
     }
     &__chef-role {
-        font-size: 15px;
         margin-top: 5px;
+
+        font-size: 15px;
 
         color: $color_gold;
     }

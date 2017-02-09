@@ -8,11 +8,12 @@
         {% include "head/head-links.tpl" %}
     </head>
     <body>
-        {% import "partials/layouts/header.tpl" as l_header %}
+        {% import "partials/layouts/header1.tpl" as l_header1 %}
         {% import "partials/layouts/hero.tpl" as l_hero %}
-        {% import "partials/layouts/header-fixed.tpl" as l_header_fixed %}
-        {% import "partials/slider-fav.tpl" as p_slider_fav %}
+        {% import "partials/layouts/header2.tpl" as l_header2 %}
+        {% import "partials/best-cuisine.tpl" as p_best_cuisine %}
         {% import "partials/icons-section.tpl" as p_icons_section %}
+        {% import "partials/layouts/header3.tpl" as l_header3 %}
         {% import "partials/layouts/organic-food.tpl" as l_organic_food %}
         {% import "partials/layouts/welcome.tpl" as l_welcome %}
         {% import "partials/layouts/history.tpl" as l_history %}
@@ -37,9 +38,9 @@
                 </div>
             </div>
         </div>
-        <header class="header">
+        <header class="header1">
             <div class="inner">
-                {{ l_header.render() }}
+                {{ l_header1.render() }}
             </div>
         </header>
         <section class="hero">
@@ -47,18 +48,24 @@
                 {{ l_hero.render() }}
             </div>
         </section>
-        <section class="header-fixed">
+        <section class="header2">
             <div class="inner">
-                {{ l_header_fixed.render() }}
+                {{ l_header2.render() }}
             </div>
         </section>
-        <section class="best-cuisine">
-            {{ p_slider_fav.render() }} 
+        <section class="best-cuisine" id="header2-anchor">
+            {{ p_best_cuisine.render() }} 
         </section>
         <div class="white-icons">      
             {{ p_icons_section.render() }}
         </div>
-        <section class="organic-food">
+        
+        <section class="organic-food" id="header3-anchor">
+            <section class="header3">
+                <div class="inner">
+                    {{ l_header3.render() }}
+                </div>
+            </section>
             {{ l_organic_food.render() }}
         </section>
         <section class="welcome">
