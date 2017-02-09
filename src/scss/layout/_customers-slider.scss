@@ -1,0 +1,34 @@
+/* ==========================================================================
+   Customers slider section
+   ========================================================================== */
+
+.customers-slider {
+	height: 100%;
+	width: 100%;
+	display: block;
+	background-color: $color_darker_grey;
+	padding: 100px 0 90px;
+	text-align: center;
+}
+
+.customers-quotes__quote {
+	margin: 46px auto 0;
+	font-size: 15px;
+	color: $color_white;
+	width: 744px;
+}
+
+.customers-name {
+	font-family: $font_montserrat;
+	text-transform: uppercase;
+	color: $color_white;
+	font-weight: bold;
+	font-size: 16px;
+	margin-top: 44px;
+}
+
+.customers-role {
+	color: $color_gold;
+	font-size: 15px;
+	margin-top: 18px;
+}

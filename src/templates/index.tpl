@@ -111,7 +111,11 @@
                 {{ l_reservation_info.render() }}
             </div>
         </section>
-            {{ l_customers_slider.render() }}
+        <section class="customers-slider">
+            <div class="inner">
+                {{ l_customers_slider.render() }}
+            </div>
+        </section>
             {{ l_customers_quotes.render() }}
             {{ l_newsletter.render() }}
         <script src="./static/js/app.js"></script>
