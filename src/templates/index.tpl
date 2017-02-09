@@ -86,7 +86,11 @@
                 {{ l_our_menu.render() }}
             </div>
         </section>
-            {{ l_hours.render() }}
+        <section class="hours">
+            <div class="inner">
+                {{ l_hours.render() }}
+            </div>
+        </section>
             {{ l_ocd.render() }}
             {{ l_ocl.render() }}
             {{ l_reservation_form.render() }}
