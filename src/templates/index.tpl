@@ -71,7 +71,11 @@
                 {{ l_history.render() }}
             </div>
         </section>
-            {{ p_quote.render() }}
+        <section class="quote-section">
+            <div class="inner">
+                {{ p_quote.render() }}
+            </div>
+        </section>
             {{ l_menu.render() }}
             {{ l_our_menu.render() }}
             {{ l_hours.render() }}
