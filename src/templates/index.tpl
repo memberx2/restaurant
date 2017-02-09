@@ -76,7 +76,11 @@
                 {{ p_quote.render() }}
             </div>
         </section>
-            {{ l_menu.render() }}
+        <section class="menu">
+            <div class="inner">
+                {{ l_menu.render() }}
+            </div>
+        </section>
             {{ l_our_menu.render() }}
             {{ l_hours.render() }}
             {{ l_ocd.render() }}
