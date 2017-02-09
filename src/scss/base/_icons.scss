@@ -31,7 +31,19 @@
     .ocd & {
         color: $color_gold;
     }
-    .ocd & {
+    .ocl & {
         color: $color_black;
     }
+}
+
+.form-button {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+
+    font-size: 15px;
+
+    transform: translateY(-50%);
+
+    color: $color_gold;
 }

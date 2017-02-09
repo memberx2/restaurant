@@ -43,4 +43,14 @@
     &--history {
         margin-top: 50px;
     }
+    &--reservation-form {
+        margin: 50px auto 0;
+        padding-top: 5px;
+
+        border: 0;
+        &:hover {
+            color: $color_gold;
+            background-color: $color_white;
+        }
+    }
 }

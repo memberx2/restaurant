@@ -1,6 +1,57 @@
 /* ==========================================================================
    Forms
    ========================================================================== */
+
+.reservation-form {
+    &__form {
+        width: 870px;
+        margin: 0 auto;
+        margin-top: 80px;
+    }
+    &__fieldset {
+        display: flex;
+        flex-direction: row;
+
+        width: 100%;
+
+        border: 0;
+
+        justify-content: space-between;
+    }
+    &__field {
+        position: relative;
+    }
+}
+
+.reservation {
+    &__input {
+        width: 270px;
+        height: 50px;
+        padding-left: 24px;
+
+        color: $color_white;
+        border: 1px solid $color_gold;
+        background-color: transparent;
+    }
+    &__time {
+        //left: 0;
+    }
+    &__data {
+        //left: 25%;
+        //transform: translate(-75%);
+    }
+    &__number {
+        //left: 22px;
+    }
+}
+
+
+
+
+
+
+
+
 .f-form {
     fieldset {
         margin: 0;
