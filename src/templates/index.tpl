@@ -106,7 +106,11 @@
                 {{ l_reservation_form.render() }}
             </div>
         </section>
-            {{ l_reservation_info.render() }}
+        <section class="reservation-info">
+            <div class="inner">
+                {{ l_reservation_info.render() }}
+            </div>
+        </section>
             {{ l_customers_slider.render() }}
             {{ l_customers_quotes.render() }}
             {{ l_newsletter.render() }}

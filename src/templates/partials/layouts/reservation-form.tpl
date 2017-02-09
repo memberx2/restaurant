@@ -13,6 +13,6 @@
 			<input class="reservation__input reservation__number" type="text" name="time" placeholder="People"><a class="form-button icon-building" href=""><span class="alt-text">calc icon</span></a>
 		</div>
 	</div>
-	<button class="button button--reservation-form" type="submit">book a table</button>
+	<button class="button button--reservation" type="submit">book a table</button>
 </form>
 {% endmacro %}
