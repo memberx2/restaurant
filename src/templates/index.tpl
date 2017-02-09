@@ -66,7 +66,11 @@
                 {{ l_welcome.render() }}
             </div>
         </section>
-            {{ l_history.render() }}
+        <section class="history">
+            <div class="inner">
+                {{ l_history.render() }}
+            </div>
+        </section>
             {{ p_quote.render() }}
             {{ l_menu.render() }}
             {{ l_our_menu.render() }}

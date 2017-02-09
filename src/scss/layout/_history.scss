@@ -1,0 +1,40 @@
+/* ==========================================================================
+   History
+   ========================================================================== */
+
+.history {
+	width: 100%;
+	height: 100%;
+	display: block;
+	background-color: $color_grey;
+	padding: 120px 0 114px;
+	&__title {
+		font-family: $font_wild_youth;
+		color: $color_gold;
+		font-size: 50px;
+		font-weight: normal;
+		
+		
+	}
+	&__subtitle {
+		font-family: $font_montserrat;
+		color: $color_white;
+		font-size: 36px;
+		font-weight: bold;
+		text-transform: uppercase;
+		position: relative;
+		&:after {
+			content: url(../img/arrow.png);
+			position: absolute;
+			left: 0;
+			top: 50px;
+		}
+
+	}
+	&__description {
+		color: $color_white;
+		font-size: 15px;
+		width: 570px;
+		margin-top: 80px;
+	}
+}

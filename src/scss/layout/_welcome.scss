@@ -45,13 +45,35 @@
 
         width: 650px;
         height: 312px;
-        
+        padding-left: 50px;
 
         transform: translateY(-50%);
 
         background-color: $color_white;
+        &:before {
+            position: absolute;
+            content: '';
+            width: 432px;
+            height: 23px;
+            left: 50px;
+            top: -24px;
+            border-width: 1px 1px 0 0;
+            border-style: solid;
+            border-color: $color_gold;
+        }
+        &:after {
+            position: absolute;
+            content: '';
+            width: 432px;
+            height: 23px;
+            left: 50px;
+            bottom: -24px;
+            border-width: 0 1px 1px 0;
+            border-style: solid;
+            border-color: $color_gold;
+        }
     }
-    &__border {
+    /*&__border {
 		display: block;
 		width: 484px;
 		height: 358px;
@@ -62,7 +84,7 @@
 		left: 50px;
 		top: -24px;
 		z-index: 10;
-	}
+	}*/
     &__title {
         margin-top: 34px;
 
