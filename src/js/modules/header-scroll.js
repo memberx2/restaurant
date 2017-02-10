@@ -11,9 +11,11 @@ const HeaderScroll = {
         var $w = $(window).scroll(function() {
             if ($w.scrollTop() < $anchor1) {
                 $('.header1').css({ "position": "relative", "display": "block" });
+                $('.hero').css({ "padding-top": "280px" });
             }
             if ($w.scrollTop() > $anchor1 && $w.scrollTop() < $anchor2) {
                 $('.header1').css({ "position": "fixed", "top": "0", "display": "block" });
+                $('.hero').css({ "padding-top": "360px" });
             }
             if ($w.scrollTop() > $anchor2 && $w.scrollTop() < $anchor3) {
                 $('.header2').css({ "display": "block" });

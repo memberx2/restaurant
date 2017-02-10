@@ -11,3 +11,12 @@
 
     background-color: $color_grey;
 }
+
+.hero__bell {
+	width: 49px;
+	margin: 0 auto;
+	&:hover {
+        animation-name: ring;
+        animation-duration: 8s;
+    }
+}

@@ -19,5 +19,5 @@
 		<a href="#" class="button button--organic-food">menu</a>
 	</div>
 </div>
-<a href="#" class="organic-food__scroll icon-angle-double-down"><span class="alt-text">Scroll</span></a>
+<a href="#" class="organic-food__scroll"><img src="./src/img/scroll.png" alt=""/></a>
 {% endmacro %}

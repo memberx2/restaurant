@@ -1,8 +1,11 @@
 .swiper-container {
-    width: 100%;
+    max-width: 1598px;
+    margin: 0 auto;
     min-height: 450px;
     .customers-slider & {
-        min-height: 280px;
+    	margin: 0 auto;
+        min-height: 280px; 
+        max-width: 984px;
     }
 }
 
@@ -68,19 +71,11 @@
 }
 
 .swiper-button-prev {
-    .best-cuisine & {
-        left: 177px;
-    }
-    .customers-slider & {
-        left: 470px;
-    }
+        left: 0;
+
 }
 
 .swiper-button-next {
-    .best-cuisine & {
-        right: 177px;
-    }
-    .customers-slider & {
-        right: 470px;
-    }
+        right: 0;
+
 }
