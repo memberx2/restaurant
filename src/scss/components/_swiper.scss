@@ -1,11 +1,14 @@
 .swiper-container {
     max-width: 1598px;
-    margin: 0 auto;
     min-height: 450px;
+    margin: 0 auto;
+    @include media ('<=phone'){
+        min-height: 506px;
+    }
     .customers-slider & {
-    	margin: 0 auto;
-        min-height: 280px; 
         max-width: 984px;
+        min-height: 280px;
+        margin: 0 auto;
     }
 }
 
@@ -29,11 +32,11 @@
 }
 
 .swiper-pagination-bullet-active {
-    
     background-color: $color_gold;
     .best-cuisine & {
         width: 12px;
         height: 12px;
+
         border: 2px solid $color_gold;
     }
     .customers-slider & {
@@ -58,6 +61,9 @@
     transform: translateY(-50%);
 
     background-image: none;
+    @include media ('<=phone'){
+        display: none;
+    }
     .best-cuisine & {
         font-size: 40px;
 
@@ -71,11 +77,12 @@
 }
 
 .swiper-button-prev {
-        left: 0;
-
+    left: 0;
 }
 
 .swiper-button-next {
-        right: 0;
-
+    right: 0;
+    .best-cuisine & {
+        right: 26px;
+    }
 }

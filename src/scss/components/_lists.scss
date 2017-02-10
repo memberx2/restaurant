@@ -150,6 +150,14 @@
         transform: translateY(-50%);
 
         justify-content: space-between;
+        @include media ('<=phone') {
+            flex-direction: row;
+            top: 150px;
+            left: 50%;
+            transform: translate(-50%);
+            margin: 0;
+
+        }
     }
     &__item {
         position: relative;
@@ -162,6 +170,10 @@
 
         border: 1px solid $color_black;
         border-radius: 100%;
+        @include media ('<=phone') {
+            margin: 0 7px;
+
+        }
         &:hover {
             background-color: $color_black;
             .side-icons__link {

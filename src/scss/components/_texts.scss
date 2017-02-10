@@ -12,6 +12,9 @@
         line-height: 76px;
 
         color: $color_white;
+        @include media ('<=phone') {
+            font-size: 62px;
+        }
     }
     &__adress {
         position: relative;
@@ -49,7 +52,7 @@
         color: $color_white;
     }
     &__description {
-        width: 396px;
+        max-width: 396px;
         margin-top: 44px;
 
         font-size: 15px;
@@ -81,10 +84,13 @@
         }
     }
     &__description {
-        width: 572px;
+        max-width: 572px;
         margin: 80px auto 0;
 
         font-size: 15px;
+        @include media ('<=phone') {
+            padding: 0 20px;
+        }
     }
 }
 

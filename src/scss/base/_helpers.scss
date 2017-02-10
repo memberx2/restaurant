@@ -6,8 +6,11 @@
    ========================================================================== */
 
 .inner {
-    width: $size_inner;
+    max-width: $size_inner;
     margin: 0 auto;
+    @include media ('<=tablet') {
+        padding: 0 20px;
+    }
 }
 
 .alt-text {
