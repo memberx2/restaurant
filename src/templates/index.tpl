@@ -29,7 +29,6 @@
         {% import "partials/layouts/customers-quotes.tpl" as l_customers_quotes %}
         {% import "partials/layouts/newsletter.tpl" as l_newsletter %}
 
-
         <div class="top">
             <div class="inner">
                 <div class="top__container">
@@ -53,14 +52,14 @@
                 {{ l_header2.render() }}
             </div>
         </section>
-        <section class="best-cuisine" id="header2-anchor">
+        <section class="best-cuisine">
             {{ p_best_cuisine.render() }} 
         </section>
         <div class="white-icons">      
             {{ p_icons_section.render() }}
         </div>
         
-        <section class="organic-food" id="header3-anchor">
+        <section class="organic-food">
             <section class="header3">
                 <div class="inner">
                     {{ l_header3.render() }}
@@ -133,6 +132,7 @@
                 {{ l_newsletter.render() }}
             </div>
         </section>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="./static/js/app.js"></script>
     </body>
 </html>
