@@ -118,9 +118,7 @@
             </div>
         </section>
         <section class="customers-slider">
-            <div class="inner">
-                {{ l_customers_slider.render() }}
-            </div>
+            {{ l_customers_slider.render() }}
         </section>
         <section class="customers">
             <div class="inner">

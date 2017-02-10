@@ -1,9 +1,13 @@
 .swiper-container {
     width: 100%;
     min-height: 450px;
+    .customers-slider & {
+        min-height: 280px;
+    }
 }
 
 .swiper-pagination-bullet {
+    background-color: transparent;
     .best-cuisine & {
         width: 10px;
         height: 10px;
@@ -11,46 +15,72 @@
 
         opacity: 1;
         border: 2px solid $color_white;
-        background-color: transparent;
+    }
+    .customers-slider & {
+        width: 4px;
+        height: 4px;
+
+        border: 1px solid $color_gold;
+        border-radius: 0;
     }
 }
 
 .swiper-pagination-bullet-active {
+    
+    background-color: $color_gold;
     .best-cuisine & {
         width: 12px;
         height: 12px;
-
         border: 2px solid $color_gold;
-        background-color: $color_gold;
+    }
+    .customers-slider & {
+        width: 4px;
+        height: 4px;
+
+        border-radius: 0;
     }
 }
 
 .swiper-pagination-bullet {
-    .best-cuisine & {
-        margin: 0 7px;
-    }
+    margin: 0 7px;
 }
 .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet-active {
-    .best-cuisine & {
-        margin: -1px 7px;
-    }
+    margin: -1px 7px;
 }
 
 .swiper-button-prev,
 .swiper-button-next {
-    background-image: none;
-    color: $color_white;
-    font-size: 40px;
+    top: 45%;
+
     transform: translateY(-50%);
-        top: 45%;
+
+    background-image: none;
+    .best-cuisine & {
+        font-size: 40px;
+
+        color: $color_white;
+    }
+    .customers-slider & {
+        font-size: 16px;
+
+        color: $color_gold;
+    }
 }
 
 .swiper-button-prev {
-	left: 177px;
-
+    .best-cuisine & {
+        left: 177px;
+    }
+    .customers-slider & {
+        left: 470px;
+    }
 }
 
 .swiper-button-next {
-	right: 177px;
-
+    .best-cuisine & {
+        right: 177px;
+    }
+    .customers-slider & {
+        right: 470px;
+    }
 }
