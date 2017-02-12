@@ -12,6 +12,7 @@
         line-height: 76px;
 
         color: $color_white;
+
         @include media ('<=phone') {
             font-size: 62px;
         }
@@ -34,10 +35,20 @@
     }
 }
 
-.best-cuisine {
+.best-cuisine,
+.welcome,
+.customers-quotes,
+.hours,
+.menu,
+.ocd,
+.ocl,
+.our-menu,
+.reservation,
+.history {
     &__title {
         font-family: $font_wild_youth;
         font-size: 45px;
+        font-weight: normal;
 
         color: $color_gold;
     }
@@ -48,7 +59,33 @@
         line-height: 36px;
 
         text-transform: uppercase;
+    }
+}
 
+.customers-quotes,
+.hours,
+.menu,
+.ocd,
+.ocl,
+.our-menu,
+.reservation {
+    &__title {
+        text-align: center;
+    }
+}
+
+.menu,
+.ocd,
+.ocl,
+.our-menu,
+.reservation {
+    &__subtitle {
+        text-align: center;
+    }
+}
+
+.best-cuisine {
+    &__subtitle {
         color: $color_white;
     }
     &__description {
@@ -88,6 +125,7 @@
         margin: 80px auto 0;
 
         font-size: 15px;
+
         @include media ('<=phone') {
             padding: 0 20px;
         }
@@ -97,19 +135,6 @@
 .welcome {
     &__title {
         margin-top: 34px;
-
-        font-family: $font_wild_youth;
-        font-size: 45px;
-
-        color: $color_gold;
-    }
-    &__subtitle {
-        font-family: $font_montserrat;
-        font-size: 36px;
-        font-weight: bold;
-        line-height: 36px;
-
-        text-transform: uppercase;
     }
     &__description {
         width: 516px;
@@ -123,20 +148,10 @@
 
 .history {
     &__title {
-        font-family: $font_wild_youth;
         font-size: 50px;
-        font-weight: normal;
-
-        color: $color_gold;
     }
     &__subtitle {
         position: relative;
-
-        font-family: $font_montserrat;
-        font-size: 36px;
-        font-weight: bold;
-
-        text-transform: uppercase;
 
         color: $color_white;
         &:after {
@@ -154,5 +169,281 @@
         font-size: 15px;
 
         color: $color_white;
+    }
+}
+
+.customers-quotes__quote {
+    width: 744px;
+    margin: 46px auto 0;
+
+    font-size: 15px;
+
+    color: $color_white;
+}
+
+.customers-name {
+    margin-top: 44px;
+
+    font-family: $font_montserrat;
+    font-size: 16px;
+    font-weight: bold;
+
+    text-transform: uppercase;
+
+    color: $color_white;
+}
+
+.customers-role {
+    margin-top: 18px;
+
+    font-size: 15px;
+
+    color: $color_gold;
+}
+
+.customers-quotes {
+    &__subtitle {
+        position: relative;
+
+        color: $color_black;
+        &:after {
+            position: absolute;
+            top: 50px;
+            left: 50%;
+
+            content: url(../img/arrow.png);
+            transform: translate(-50%);
+        }
+    }
+    &__quotation {
+        width: 744px;
+        margin: 80px auto 0;
+
+        font-size: 15px;
+
+        color: $color_black;
+    }
+    &__name {
+        margin-top: 105px;
+
+        font-family: $font_montserrat;
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 16px;
+
+        text-align: center;
+        text-transform: uppercase;
+
+        color: $color_black;
+    }
+    &__role {
+        margin-top: 14px;
+
+        font-size: 15px;
+        font-weight: normal;
+
+        text-align: center;
+
+        color: $color_gold;
+    }
+}
+
+.hours {
+    text-align: center;
+    &__title {
+        &--time {
+            font-family: $font_montserrat;
+            font-size: 15px;
+            font-weight: bold;
+
+            text-transform: uppercase;
+
+            color: $color_black;
+        }
+    }
+    &__subtitle {
+        color: $color_white;
+        &--time {
+            margin-top: 14px;
+
+            font-size: 15px;
+            font-weight: normal;
+            line-height: 25px;
+
+            color: $color_black;
+        }
+    }
+}
+
+.menu {
+    &__subtitle {
+        color: $color_black;
+    }
+    &__item {
+        &--title {
+            font-family: $font_montserrat;
+            font-size: 16px;
+            font-weight: bold;
+
+            text-transform: uppercase;
+
+            color: $color_black;
+        }
+        &--subtitle {
+            font-size: 15px;
+            font-weight: normal;
+            line-height: 15px;
+
+            color: $color_gold;
+        }
+        &--description {
+            width: 264px;
+            margin: 40px 0 42px;
+
+            font-size: 15px;
+            font-weight: normal;
+        }
+        &--price {
+            font-family: $font_montserrat;
+            font-size: 24px;
+            font-weight: bold;
+        }
+    }
+}
+
+.newsletter {
+    &__title {
+        position: relative;
+
+        font-family: $font_montserrat;
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 18px;
+
+        text-align: center;
+        text-transform: uppercase;
+
+        color: $color_black;
+        &:after {
+            position: absolute;
+            top: 50px;
+            left: 50%;
+
+            content: url(../img/arrow.png);
+            transform: translate(-50%);
+        }
+    }
+}
+
+.ocd {
+    &__subtitle {
+        color: $color_white;
+    }
+}
+
+.ocl {
+    &__subtitle {
+        color: $color_black;
+    }
+    &__description {
+        margin-top: 46px;
+
+        font-size: 15px;
+        font-weight: normal;
+
+        color: $color_black;
+    }
+}
+
+.our-menu {
+    &__subtitle {
+        color: $color_white;
+    }
+    &__description {
+        width: 638px;
+        margin: 50px auto 0;
+
+        font-size: 15px;
+        font-weight: normal;
+
+        text-align: center;
+
+        color: $color_white;
+    }
+    &__description-container {
+        &__title {
+            font-family: $font_montserrat;
+            font-size: 16px;
+            font-weight: bold;
+
+            text-transform: uppercase;
+
+            color: $color_white;
+        }
+        &__description {
+            font-size: 15px;
+            font-weight: normal;
+            line-height: 15px;
+
+            color: $color_gold;
+        }
+    }
+    &__price {
+        font-family: $font_montserrat;
+        font-size: 16px;
+        font-weight: bold;
+
+        color: $color_white;
+    }
+}
+
+.quote {
+    font-size: 36px;
+    font-weight: normal;
+
+    color: $color_white;
+}
+
+.signature {
+    margin-top: 10px;
+
+    font-family: $font_wild_youth;
+    font-size: 45px;
+    font-weight: normal;
+
+    color: $color_gold;
+}
+
+.reservation {
+    &__subtitle {
+        position: relative;
+
+        color: $color_white;
+        .reservation-info & {
+            color: $color_black;
+        }
+        &:after {
+            position: absolute;
+            top: 50px;
+            left: 50%;
+
+            content: url(../img/arrow.png);
+            transform: translate(-50%);
+            .reservation-info & {
+                display: none;
+            }
+        }
+    }
+}
+
+.reservation-info {
+    &__description {
+        width: 742px;
+        margin: 46px auto 0;
+
+        font-size: 15px;
+        font-weight: normal;
+
+        color: $color_black;
     }
 }

@@ -1,3 +1,487 @@
 /* ==========================================================================
    Sections' backgrounds
    ========================================================================== */
+
+/* ==========================================================================
+   Top
+   ========================================================================== */
+
+.top {
+    width: 100%;
+    height: 100%;
+
+    background-color: $color_gold;
+    &__container {
+        display: flex;
+        flex-direction: row;
+
+        justify-content: space-between;
+    }
+}
+
+/* ==========================================================================
+   Hero
+   ========================================================================== */
+
+.hero {
+    width: 100%;
+    height: 100%;
+    padding: 286px 0 40px;
+
+    text-align: center;
+
+    background-color: $color_grey;
+}
+
+.hero__bell {
+	width: 49px;
+	margin: 0 auto;
+	&:hover {
+        animation-name: ring;
+        animation-duration: 8s;
+    }
+}
+
+/* ==========================================================================
+   Best cuisine
+   ========================================================================== */
+
+.best-cuisine {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+    padding: 360px 0 50px;
+
+    background-color: $color_grey;
+}
+
+/* ==========================================================================
+   White icons
+   ========================================================================== */
+
+.white-icons {
+	padding: 46px 0 42px;
+}
+
+/* ==========================================================================
+   Organic food
+   ========================================================================== */
+
+.organic-food {
+    position: relative;
+
+    display: block;
+
+    width: 100%;
+    height: 100%;
+    padding-top: 10px;
+    padding-bottom: 48px;
+
+    background: linear-gradient(to bottom, #e9e9e9 0%,#ccc 100%);
+    &--body {
+        margin-bottom: 182px;
+        padding-top: 268px;
+    }
+    &__container {
+        position: relative;
+        left: 50%;
+
+        display: block;
+
+        max-width: 732px;
+        height: 450px;
+
+        transform: translate(-50%);
+        text-align: center;
+
+        background-color: $color_white;
+
+        @include media ('<=phone') {
+            height: 500px;
+        }
+        &:before {
+            position: absolute;
+            z-index: -10;
+            top: 50%;
+            left: 50%;
+
+            width: 95%;
+            height: 95%;
+
+            content: '';
+            transform: translate(-50%,-50%);
+
+            border: 1px solid $color_black;
+        }
+    }
+}
+
+/* ==========================================================================
+   Welcome
+   ========================================================================== */
+
+.welcome {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+    padding: 94px 0 108px;
+
+    background-color: $color_light_grey;
+    &__container {
+        position: relative;
+
+        display: flex;
+
+        width: 100%;
+        height: 400px;
+         @include media ('<=phone') {
+            flex-direction: column;
+
+        }
+    }
+    &__text-container {
+        position: relative;
+        z-index: 20;
+        top: 50%;
+        left: -50px;
+
+        display: block;
+
+        width: 650px;
+        height: 312px;
+        padding-left: 50px;
+
+        transform: translateY(-50%);
+
+        background-color: $color_white;
+        &:before {
+            position: absolute;
+            top: -24px;
+            left: 50px;
+
+            width: 432px;
+            height: 23px;
+
+            content: '';
+
+            border-width: 1px 1px 0 0;
+            border-style: solid;
+            border-color: $color_gold;
+        }
+        &:after {
+            position: absolute;
+            bottom: -24px;
+            left: 50px;
+
+            width: 432px;
+            height: 23px;
+
+            content: '';
+
+            border-width: 0 1px 1px 0;
+            border-style: solid;
+            border-color: $color_gold;
+        }
+    }
+}
+
+/* ==========================================================================
+   History
+   ========================================================================== */
+
+.history {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+    padding: 120px 0 114px;
+
+    background-color: $color_grey;
+}
+
+/* ==========================================================================
+   Quote section
+   ========================================================================== */
+
+.quote-section {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+    padding: 140px 0 104px;
+
+    text-align: center;
+
+    background-color: $color_darker_grey;
+}
+
+/* ==========================================================================
+   Menu
+   ========================================================================== */
+
+.menu {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+    padding: 86px 0 98px;
+
+    background-color: $color_white;
+    &__image {
+        position: absolute;
+        z-index: 20;
+        top: 50%;
+
+        display: block;
+
+        transform: translateY(-50%);
+        .menu__list--left & {
+            left: 0;
+        }
+        .menu__list--right & {
+            right: 0;
+        }
+    }
+}
+
+.lists-container {
+    display: flex;
+    flex-direction: row;
+
+    margin-top: 100px;
+
+    justify-content: space-between;
+}
+
+/* ==========================================================================
+   Our menu
+   ========================================================================== */
+
+.our-menu {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+    padding: 84px 0 130px;
+
+    background-color: $color_darker_grey;
+    &__text-container {
+        display: flex;
+        flex-direction: row;
+
+        width: 452px;
+        margin-top: 20px;
+
+        justify-content: space-between;
+    }
+}
+
+/* ==========================================================================
+   Opening hours
+   ========================================================================== */
+
+.hours {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+    padding: 88px 0 100px;
+
+    background-color: $color_dark;
+    &--lunch {
+        margin-top: 36px;
+    }
+    &__container {
+        display: flex;
+        flex-direction: row;
+
+        width: 100%;
+        margin-top: 96px;
+
+        justify-content: center;
+    }
+    &__text-container {
+        position: relative;
+
+        width: 399px;
+        padding-top: 75px;
+
+        text-align: center;
+
+        color: $color_black;
+        background: url(../img/6.png) 50% 50% no-repeat;
+        background-size: cover;
+        &:after {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+
+            width: 380px;
+            height: 330px;
+
+            content: '';
+            transform: translate(-50%,-50%);
+
+            border: 1px solid $color_black;
+        }
+    }
+}
+
+/* ==========================================================================
+   Our chefs - dark background
+   ========================================================================== */
+
+.ocd {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+    padding: 84px 0 96px;
+
+    background-color: $color_darker_grey;
+}
+
+/* ==========================================================================
+   Our chefs - light background
+   ========================================================================== */
+
+.ocl {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+    padding: 90px 0 42px;
+
+    text-align: center;
+
+    background-color: $color_white;
+}
+
+/* ==========================================================================
+   Reservation
+   ========================================================================== */
+
+.reservation-form {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+    padding: 90px 0 98px;
+
+    background-color: $color_dark;
+}
+
+.reservation-info {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+    padding: 90px 0 98px;
+
+    text-align: center;
+
+    background-color: $color_white;
+}
+
+/* ==========================================================================
+   Customers slider section
+   ========================================================================== */
+
+.customers-slider {
+    height: 100%;
+    width: 100%;
+    display: block;
+    background-color: $color_darker_grey;
+    padding: 100px 0 90px;
+    text-align: center;
+}
+
+/* ==========================================================================
+   Customers
+   ========================================================================== */
+
+.customers {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+    padding: 92px 0 100px;
+
+    background-color: $color_white;
+}
+
+/* ==========================================================================
+   Newsletter
+   ========================================================================== */
+
+.newsletter {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+    padding: 80px 0 94px;
+
+    background-color: $color_white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
