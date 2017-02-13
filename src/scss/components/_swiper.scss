@@ -9,6 +9,9 @@
         max-width: 984px;
         min-height: 280px;
         margin: 0 auto;
+        @include media ('<=phone') {
+            min-height: 350px;
+        }
     }
 }
 

@@ -7,6 +7,10 @@
         width: 870px;
         margin: 0 auto;
         margin-top: 80px;
+
+        @include media ('<=phone') {
+            width: 100%;
+        }
     }
     &__fieldset {
         display: flex;
@@ -17,9 +21,16 @@
         border: 0;
 
         justify-content: space-between;
+        @include media ('<=phone') {
+            flex-direction: column;
+        }
     }
     &__field {
         position: relative;
+
+        @include media ('<=phone') {
+            margin-bottom: 20px;
+        }
     }
 }
 
@@ -48,16 +59,31 @@
 .newsletter {
     &__form {
         display: flex;
-        justify-content: space-between;
         flex-direction: row;
+
         width: 470px;
         margin: 100px auto 0;
+
+        justify-content: space-between;
+        @include media ('<=phone') {
+            flex-direction: column;
+
+            width: 100%;
+
+            align-items: center;
+        }
     }
     &__email {
         width: 268px;
+        height: 50px;
         padding-left: 15px;
-        border: 1px solid $color_black;
+
         color: $color_black;
+        border: 1px solid $color_black;
+
+        @include media ('<=phone') {
+            margin-bottom: 20px;
+        }
     }
 }
 

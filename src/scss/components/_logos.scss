@@ -10,20 +10,42 @@
     height: 39px;
 
     background-image: url(../img/header-logo.png);
+    .header2 & {
+        display: none;
+    }
+}
+
+.header1__logo {
+    .header3 & {
+        display: none;
+    }
 }
 
 
 .header2__logo {
-    display: block;
+    display: none;
 
-    width: 117px;
+    width: 120px;
     height: 62px;
     margin: 0 auto;
 
     background-image: url(../img/header-logo2.png);
+    background-repeat: no-repeat;
+    .header2 & {
+        display: block;
+    }
 }
 
 .header3__logo {
     position: relative;
     top: -9px;
+    &.opened {
+        display: none;
+
+        @include media ('<=tablet') {
+            top: 0;
+
+            display: block;
+        }
+    }
 }

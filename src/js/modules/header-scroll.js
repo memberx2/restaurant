@@ -3,40 +3,32 @@ import $ from 'jquery'
 const HeaderScroll = {
     init: function() {
 
-        var $anchor1 = $('.header1').offset().top;
+        var $anchor1 = $('.header').offset().top;
         var $anchor2 = $('.best-cuisine').offset().top;
-        var $anchor3 = $('.white-icons').offset().top;
-        var $anchor4 = $('.organic-food').offset().top;
+        var $anchor3 = $('.organic-food').offset().top;
 
         var $w = $(window).scroll(function() {
             if ($w.scrollTop() < $anchor1) {
-                $('.header1').css({ "position": "relative", "display": "block" });
+                $('.header').css({ "position": "relative", "display": "block" });
                 $('.hero').css({ "padding-top": "280px" });
             }
-            if ($w.scrollTop() > $anchor1 && $w.scrollTop() < $anchor2) {
-                $('.header1').css({ "position": "fixed", "top": "0", "display": "block" });
+            if ($w.scrollTop() > $anchor1 && $w.scrollTop() <= $anchor2) {
+                $('.header').css({ "position": "fixed", "top": "0", "display": "block" });
                 $('.hero').css({ "padding-top": "360px" });
             }
-            if ($w.scrollTop() > $anchor2 && $w.scrollTop() < $anchor3) {
-                $('.header2').css({ "display": "block" });
-
-            } else {
-                $('.header2').css({ "display": "none" });
+            if ($w.scrollTop() > $anchor2 && $w.scrollTop() <= $anchor3) {
+                $('.header').addClass('header2');
             }
-            if ($w.scrollTop() > $anchor3 && $w.scrollTop() < $anchor4) {
-                $('.header3').css({ "display": "block" });
-                $('.header1').css({ "display": "none" });
-
-            } else {
-                $('.header3').css({ "display": "none" });
+            else {
+                $('.header').removeClass('header2');
             }
-            if ($w.scrollTop() >= $anchor4) {
-                $('.header3').css({ "background-color": "#e9e9e9", "height": "100px", "display": "block"});
-            } else {
-            	$('.header3').css({ "background-color": "transparent" });
+            if ($w.scrollTop() > $anchor3) {
+                $('.header').addClass('header3');
             }
-
-        });
+            else {
+                $('.header').removeClass('header3');
+            }
+       });
     }
 }
 $(document).ready(function() {

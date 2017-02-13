@@ -143,6 +143,10 @@
         font-size: 15px;
 
         text-align: left;
+
+        @include media ('<=phone') {
+            width: 100%;
+        }
     }
 }
 
@@ -169,6 +173,10 @@
         font-size: 15px;
 
         color: $color_white;
+
+        @include media ('<=phone') {
+            width: 100%;
+        }
     }
 }
 
@@ -179,6 +187,11 @@
     font-size: 15px;
 
     color: $color_white;
+
+    @include media ('<=phone') {
+        width: 100%;
+        padding: 0 10px;
+    }
 }
 
 .customers-name {
@@ -204,7 +217,9 @@
 .customers-quotes {
     &__subtitle {
         position: relative;
+
         text-align: center;
+
         color: $color_black;
         &:after {
             position: absolute;
@@ -222,6 +237,12 @@
         font-size: 15px;
 
         color: $color_black;
+
+        @include media ('<=phone') {
+            width: 100%;
+
+            text-align: center;
+        }
     }
     &__name {
         margin-top: 105px;
@@ -369,6 +390,10 @@
         text-align: center;
 
         color: $color_white;
+
+        @include media ('<=phone') {
+            width: 100%;
+        }
     }
     &__description-container {
         &__title {
@@ -445,5 +470,9 @@
         font-weight: normal;
 
         color: $color_black;
+
+        @include media ('<=phone') {
+            width: 100%;
+        }
     }
 }

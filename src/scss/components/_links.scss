@@ -9,10 +9,13 @@
     font-size: 15px;
 
     transform: translate(-50%);
-    
 }
 
-.header1__navigation__link {
-	color: $color_white;
-
+.header__navigation__link {
+    .header1 & {
+        color: $color_white;
+    }
+    @include media ('<=phone') {
+    	font-size: 20px;
+    }
 }

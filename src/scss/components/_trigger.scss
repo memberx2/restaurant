@@ -1,40 +1,94 @@
 .trigger {
-    position: relative;
-    //top: 50%;
+    display: none;
+    
+        @include media ('<=tablet') {
+            position: absolute;
+            top: 50%;
+            right: 0;
 
-    display: block;
+            display: block;
 
-    width: 16px;
-    height: 3px;
-    //transform: translateY(-50%);
+            width: 16px;
+            height: 3px;
 
-    background-color: $color_white;
-    .header2 &,
-    .header3 & {
-        display: none;
+            transform: translateY(-50%);
+
+            background-color: $color_white;
+            .header1 & {
+                top: 38px;
+            }
+            .header2 & {
+                top: 50px;
+            }
+            &.active {
+                background-color: transparent;
+                &:before {
+                top: 0;
+
+                transform: rotate(-45deg);
+                background-color: $color_white;
+                &.active {
+                transform: rotate(-45deg);
+            }
+                .header2 &,
+                .header3 & {
+                    background-color: $color_gold;
+                }
+            }
+            &:after {
+                top: 0;
+
+                transform: rotate(45deg);
+                background-color: $color_white;
+
+                .header2 &,
+                .header3 & {
+                    background-color: $color_gold;
+                }
+            }
+            }
+            .header2 &,
+            .header3 & {
+                background-color: $color_gold;
+                &.active {
+                background-color: transparent;
+            }
+            }
+            &:before {
+                position: absolute;
+                top: -6px;
+                left: 0;
+
+                width: 16px;
+                height: 3px;
+
+                content: '';
+
+                background-color: $color_white;
+                &.active {
+                transform: rotate(-45deg);
+            }
+                .header2 &,
+                .header3 & {
+                    background-color: $color_gold;
+                }
+            }
+            &:after {
+                position: absolute;
+                top: 6px;
+                left: 0;
+
+                width: 16px;
+                height: 3px;
+
+                content: '';
+
+                background-color: $color_white;
+                .header2 &,
+                .header3 & {
+                    background-color: $color_gold;
+                }
+            }
+        }
     }
-    &:before {
-        position: absolute;
-        top: -6px;
-        left: 0;
 
-        width: 16px;
-        height: 3px;
-
-        content: '';
-
-        background-color: $color_white;
-    }
-    &:after {
-        position: absolute;
-        top: 6px;
-        left: 0;
-
-        width: 16px;
-        height: 3px;
-
-        content: '';
-
-        background-color: $color_white;
-    }
-}
