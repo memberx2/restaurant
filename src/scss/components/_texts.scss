@@ -323,6 +323,9 @@
 
             font-size: 15px;
             font-weight: normal;
+            @include media ('<=1226px') {
+                margin: 40px auto 42px;
+            }
         }
         &--price {
             font-family: $font_montserrat;
@@ -391,7 +394,7 @@
 
         color: $color_white;
 
-        @include media ('<=phone') {
+        @include media ('<=1200px') {
             width: 100%;
         }
     }

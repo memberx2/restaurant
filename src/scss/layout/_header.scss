@@ -22,6 +22,9 @@
         padding: 28px 0 5px;
 
         background-color: $color_white;
+        @include media ('<=tablet') {
+            height: 130px;
+        }
     }
     &.header3 {
         height: 128px;

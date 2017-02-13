@@ -64,7 +64,7 @@
     transform: translateY(-50%);
 
     background-image: none;
-    @include media ('<=phone'){
+    @include media ('<=tablet'){
         display: none;
     }
     .best-cuisine & {
