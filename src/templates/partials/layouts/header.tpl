@@ -25,7 +25,6 @@
             <a class="header__navigation__link" href="">contact</a>
         </li>
     </ul>
-    <a class="header3__logo opened" href="#"><span class="alt-text">Header logo</span></a>
     <span class="trigger"></span>
 </div>
 {% endmacro %}

@@ -15,7 +15,4 @@
     .header1 & {
         color: $color_white;
     }
-    @include media ('<=phone') {
-    	font-size: 20px;
-    }
 }

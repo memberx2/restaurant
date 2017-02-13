@@ -18,6 +18,10 @@
 .header1__logo {
     .header3 & {
         display: none;
+
+        @include media ('<=tablet') {
+            display: block;
+        }
     }
 }
 
@@ -39,13 +43,4 @@
 .header3__logo {
     position: relative;
     top: -9px;
-    &.opened {
-        display: none;
-
-        @include media ('<=tablet') {
-            top: 0;
-
-            display: block;
-        }
-    }
 }

@@ -12,6 +12,11 @@
     padding: 21px 0 20px;
 
     background-color: $color_dark_grey;
+
+    @include media ('>tablet','<=1220px') {
+        width: 100%;
+        padding: 20px;
+    }
     &.header2 {
         height: 170px;
         padding: 28px 0 5px;
@@ -21,6 +26,7 @@
     &.header3 {
         height: 128px;
         padding: 64px 0 5px;
+
         background: linear-gradient(to bottom, #e9e9e9 0%,#e4e4e4 100%);
     }
     &__container {
@@ -30,6 +36,9 @@
         width: 100%;
 
         justify-content: space-between;
+        @include media ('<=tablet') {
+            position: relative;
+        }
         .header2 & {
             flex-direction: column;
 
@@ -39,6 +48,9 @@
         }
         .header3 & {
             justify-content: center;
+            @include media ('<=tablet') {
+                justify-content: flex-start;
+            }
         }
     }
 }

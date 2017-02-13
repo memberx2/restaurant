@@ -11,11 +11,37 @@
         padding-top: 10px;
 
         justify-content: space-between;
+        @include media ('<=tablet') {
+            display: none;
+            &.active {
+                position: absolute;
+                top: 58px;
+                left: -20px;
+
+                display: block;
+                flex-direction: column;
+
+                width: 100vw;
+                height: 100vh;
+                padding: 10px 0 0 32px;
+
+                background-color: rgba(0, 0, 0, .6);
+                .header2 & {
+                    top: 140px;
+
+                    background-color: rgba(255, 255, 255, .6);
+                }
+            }
+        }
         .header3 & {
             height: 100%;
         }
         &__item {
             height: 28px;
+
+            @include media ('<=tablet') {
+                padding: 30px 0;
+            }
             &:hover {
                 border-bottom: 2px solid $color_gold;
             }
@@ -27,6 +53,10 @@
             }
             .header3 & {
                 display: block;
+
+                @include media ('<=tablet') {
+                    display: none;
+                }
             }
         }
         &__link {
@@ -37,6 +67,10 @@
             text-transform: uppercase;
 
             color: $color_white;
+
+            @include media ('<=tablet') {
+                font-size: 25px;
+            }
             .header2 &,
             .header3 & {
                 color: $color_black;
