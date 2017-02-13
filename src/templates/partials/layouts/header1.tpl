@@ -20,9 +20,6 @@
         <li class="header1__navigation__item">
             <a class="header1__navigation__link" href="">contact</a>
         </li>
-        <li class="header1__navigation__item header1__navigation__menu">
-            <a class="trigger-link" href="#"><span class="trigger"></span></a>
-        </li>
     </ul>
 </div>
 {% endmacro %}

@@ -5,7 +5,7 @@
 			<a class="side-icons__link icon-stumbleupon-circled" href=""><span class="alt-text">??</span></a>
 		</li>
 		<li class="side-icons__item">
-			<a class="side-icons__link  icon-doc-text" href=""><span class="alt-text">Document</span></a>
+			<a class="side-icons__link  icon-doc-text-inv" href=""><span class="alt-text">Document</span></a>
 		</li>
 		<li class="side-icons__item">
 			<a class="side-icons__link icon-cloud" href=""><span class="alt-text">Cloud</span></a>

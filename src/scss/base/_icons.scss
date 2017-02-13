@@ -17,9 +17,15 @@
     font-size: 15px;
     .ocd & {
         color: $color_gold;
+        &:hover {
+            color: $color_white;
+        }
     }
     .ocl & {
         color: $color_black;
+        &:hover {
+            color: $color_gold;
+        }
     }
 }
 
