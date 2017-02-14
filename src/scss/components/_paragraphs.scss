@@ -8,13 +8,6 @@
 .our-menu,
 .reservation,
 .history {
-    &__title {
-        font-family: $font_wild_youth;
-        font-size: 45px;
-        font-weight: normal;
-
-        color: $color_gold;
-    }
     &__subtitle {
         font-family: $font_montserrat;
         font-size: 36px;
@@ -22,18 +15,6 @@
         line-height: 36px;
 
         text-transform: uppercase;
-    }
-}
-
-.customers-quotes,
-.hours,
-.menu,
-.ocd,
-.ocl,
-.our-menu,
-.reservation {
-    &__title {
-        text-align: center;
     }
 }
 
@@ -59,22 +40,11 @@
 
         color: $color_gold;
     }
-    &__title {
-        font-size: 76px;
-        font-weight: 100;
-        line-height: 76px;
-
-        color: $color_white;
-
-        @include media ('<=phone') {
-            font-size: 62px;
-        }
-    }
     &__adress {
         position: relative;
 
         font-size: 16px;
-        font-weight: 100;
+        font-weight: lighter;
 
         color: $color_white;
         &:after {
@@ -113,25 +83,6 @@
    ========================================================================== */
 
 .organic-food {
-    &__title {
-        position: relative;
-
-        padding-top: 100px;
-
-        font-family: $font_montserrat;
-        font-size: 36px;
-        font-weight: bold;
-
-        text-transform: uppercase;
-        &:after {
-            position: absolute;
-            bottom: -50px;
-            left: 50%;
-
-            content: url(../img/arrow.png);
-            transform: translate(-50%);
-        }
-    }
     &__description {
         max-width: 572px;
         margin: 80px auto 0;
@@ -149,9 +100,6 @@
    ========================================================================== */
 
 .welcome {
-    &__title {
-        margin-top: 34px;
-    }
     &__description {
         width: 516px;
         margin-top: 44px;
@@ -171,9 +119,6 @@
    ========================================================================== */
 
 .history {
-    &__title {
-        font-size: 50px;
-    }
     &__subtitle {
         position: relative;
 
@@ -302,15 +247,6 @@
         color: $color_black;
     }
     &__item {
-        &--title {
-            font-family: $font_montserrat;
-            font-size: 16px;
-            font-weight: bold;
-
-            text-transform: uppercase;
-
-            color: $color_black;
-        }
         &--subtitle {
             font-size: 15px;
             font-weight: normal;
@@ -492,13 +428,6 @@
    Customers
    ========================================================================== */
 
-.quote {
-    font-size: 36px;
-    font-weight: normal;
-
-    color: $color_white;
-}
-
 .signature {
     margin-top: 10px;
 
@@ -507,32 +436,4 @@
     font-weight: normal;
 
     color: $color_gold;
-}
-
-/* ==========================================================================
-   Newsletter
-   ========================================================================== */
-
-.newsletter {
-    &__title {
-        position: relative;
-
-        font-family: $font_montserrat;
-        font-size: 18px;
-        font-weight: bold;
-        line-height: 18px;
-
-        text-align: center;
-        text-transform: uppercase;
-
-        color: $color_black;
-        &:after {
-            position: absolute;
-            top: 50px;
-            left: 50%;
-
-            content: url(../img/arrow.png);
-            transform: translate(-50%);
-        }
-    }
 }

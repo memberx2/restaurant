@@ -1,0 +1,151 @@
+/* ==========================================================================
+   Headings
+   ========================================================================== */
+
+.best-cuisine,
+.welcome,
+.customers-quotes,
+.hours,
+.menu,
+.ocd,
+.ocl,
+.our-menu,
+.reservation,
+.history {
+    &__title {
+        font-family: $font_wild_youth;
+        font-size: 45px;
+        font-weight: normal;
+
+        color: $color_gold;
+    }
+}
+
+.customers-quotes,
+.hours,
+.menu,
+.ocd,
+.ocl,
+.our-menu,
+.reservation {
+    &__title {
+        text-align: center;
+    }
+}
+
+/* ==========================================================================
+   Hero
+   ========================================================================== */
+
+.hero {
+    &__title {
+        font-size: 76px;
+        font-weight: 100;
+        line-height: 76px;
+
+        color: $color_white;
+
+        @include media ('<=phone') {
+            font-size: 62px;
+        }
+    }
+}
+
+/* ==========================================================================
+   Organic food
+   ========================================================================== */
+
+.organic-food {
+    &__title {
+        position: relative;
+
+        padding-top: 100px;
+
+        font-family: $font_montserrat;
+        font-size: 36px;
+        font-weight: bold;
+
+        text-transform: uppercase;
+        &:after {
+            position: absolute;
+            bottom: -50px;
+            left: 50%;
+
+            content: url(../img/arrow.png);
+            transform: translate(-50%);
+        }
+    }
+}
+
+/* ==========================================================================
+   Welcome
+   ========================================================================== */
+
+.welcome {
+    &__title {
+        margin-top: 34px;
+    }
+}
+
+/* ==========================================================================
+   History
+   ========================================================================== */
+
+.history {
+    &__title {
+        font-size: 50px;
+    }
+}
+
+/* ==========================================================================
+   Menu
+   ========================================================================== */
+
+.menu__item--title {
+    font-family: $font_montserrat;
+    font-size: 16px;
+    font-weight: bold;
+
+    text-transform: uppercase;
+
+    color: $color_black;
+}
+
+/* ==========================================================================
+   Customers
+   ========================================================================== */
+
+.quote {
+    font-size: 36px;
+    font-weight: normal;
+
+    color: $color_white;
+}
+
+/* ==========================================================================
+   Newsletter
+   ========================================================================== */
+
+.newsletter {
+    &__title {
+        position: relative;
+
+        font-family: $font_montserrat;
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 18px;
+
+        text-align: center;
+        text-transform: uppercase;
+
+        color: $color_black;
+        &:after {
+            position: absolute;
+            top: 50px;
+            left: 50%;
+
+            content: url(../img/arrow.png);
+            transform: translate(-50%);
+        }
+    }
+}
