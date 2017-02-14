@@ -8,8 +8,9 @@
 .inner {
     max-width: $size_inner;
     margin: 0 auto;
-    @include media ('<=tablet') {
+    @include media ('<=1200px') {
         padding: 0 20px;
+        width: 100%;
     }
 }
 

@@ -1,0 +1,23 @@
+/* ==========================================================================
+   Autocomplete
+   ========================================================================== */
+
+.ui-autocomplete {
+    font-family: $font_default;
+
+    text-align: center;
+
+    color: $color_white;
+    background-color: $color_black;
+}
+
+.ui-widget.ui-widget-content {
+    border: 1px solid $color_gold;
+}
+
+.ui-menu-item-wrapper {
+    &:hover {
+        border: 0;
+        background-color: $color_gold;
+    }
+}

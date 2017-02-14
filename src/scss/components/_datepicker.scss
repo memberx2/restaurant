@@ -1,0 +1,89 @@
+/* ==========================================================================
+   Datepicker
+   ========================================================================== */
+
+.ui-widget {
+    font-family: $font_default;
+}
+
+.ui-datepicker {
+    color: $color_gold;
+    border: 1px solid $color_gold;
+    background-color: $color_black;
+}
+
+.ui-widget-header {
+    color: $color_gold;
+    border: 0;
+    border-bottom: 1px solid $color_gold;
+    background-color: $color_black;
+}
+
+.ui-state-default,
+.ui-widget-content .ui-state-default {
+    color: $color_white;
+    border: none;
+    background-color: transparent;
+    &:hover {
+        background-color: $color_dark_grey;
+    }
+}
+
+.ui-widget-header .ui-icon {
+    background-image: none;
+}
+
+.ui-datepicker th {
+    border-bottom: 1px solid $color_gold;
+}
+
+.ui-state-highlight,
+.ui-widget-content .ui-state-highlight {
+    background-color: $color_gold;
+    &:hover {
+        background-color: $color_gold;
+    }
+}
+
+.ui-corner-all {
+    position: relative;
+}
+
+a.ui-corner-all {
+    &:hover {
+        border: 0;
+        background-color: transparent;
+    }
+}
+
+.ui-datepicker-next {
+    &:after {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        font-family: 'custom-icons';
+        font-size: 15px;
+
+        content: '\e807';
+        transform: translate(-50%,-50%);
+
+        color: $color_gold;
+    }
+}
+
+.ui-datepicker-prev {
+    &:after {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        font-family: 'custom-icons';
+        font-size: 15px;
+
+        content: '\e808';
+        transform: translate(-50%,-50%);
+
+        color: $color_gold;
+    }
+}

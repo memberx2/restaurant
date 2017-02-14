@@ -8,8 +8,17 @@
 
 /* Breakpoint
    ========================================================================== */
+@import "node_modules/jquery-timepicker/jquery.timepicker";
 @import "node_modules/include-media/dist/_include-media";
 @import "node_modules/swiper/dist/css/swiper";
+@import "node_modules/jquery-ui/themes/base/theme";
+//@import "node_modules/jquery-ui/themes/base/base";
+@import "node_modules/jquery-ui/themes/base/core";
+@import "node_modules/jquery-ui/themes/base/selectable";
+@import "node_modules/jquery-ui/themes/base/datepicker";
+@import "node_modules/jquery-ui/themes/base/autocomplete";
+@import 'node_modules/jquery-ui-timepicker-addon/dist/jquery-ui-timepicker-addon'
+
 
 /* Flex Helpers
    ========================================================================== */
@@ -50,6 +59,9 @@
 @import "components/trigger";
 @import "components/texts";
 @import "components/swiper";
+@import "components/datepicker";
+@import "components/autocomplete";
+@import "components/timepicker";
 
 /* Utilities
    ========================================================================== */

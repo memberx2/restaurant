@@ -211,7 +211,7 @@
             border-style: solid;
             border-color: $color_gold;
 
-            @include media ('<=phone') {
+            @include media ('<=1220px') {
                 left: 50%;
 
                 width: 90%;

@@ -1,0 +1,18 @@
+/* ==========================================================================
+   Timepicker
+   ========================================================================== */
+
+ .ui-widget-content {
+ 	border-color: $color_gold;
+ }
+
+ .ui-state-default, .ui-widget-content .ui-state-default {
+ 	color: $color_gold;
+ 	font-family: $font_default;
+ }
+
+ .ui-timepicker-div .ui_tpicker_time .ui_tpicker_time_input {
+ 	color: $color_gold;
+ 	font-family: $font_default;
+
+ }
