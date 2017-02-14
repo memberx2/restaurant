@@ -2,7 +2,7 @@
 <div class="swiper-container">
 	<div class="swiper-wrapper">
 		<div class="swiper-slide">
-			<div class="inner">
+			<div class="inner--slider">
 				<h2 class="best-cuisine__title">The Best Cuisine</h2>
 				<p class="best-cuisine__subtitle">in your town</p>
 				<p class="best-cuisine__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -10,7 +10,7 @@
 			</div>
 		</div>
 		<div class="swiper-slide">
-			<div class="inner">
+			<div class="inner--slider">
 				<h2 class="best-cuisine__title">The Best Cuisine</h2>
 				<p class="best-cuisine__subtitle">in your town</p>
 				<p class="best-cuisine__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -18,7 +18,7 @@
 			</div>
 		</div>
 		<div class="swiper-slide">
-			<div class="inner">
+			<div class="inner--slider">
 				<h2 class="best-cuisine__title">The Best Cuisine</h2>
 				<p class="best-cuisine__subtitle">in your town</p>
 				<p class="best-cuisine__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -26,7 +26,7 @@
 			</div>
 		</div>
 		<div class="swiper-slide">
-			<div class="inner">
+			<div class="inner--slider">
 				<h2 class="best-cuisine__title">The Best Cuisine</h2>
 				<p class="best-cuisine__subtitle">in your town</p>
 				<p class="best-cuisine__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -34,7 +34,7 @@
 			</div>
 		</div>
 		<div class="swiper-slide">
-			<div class="inner">
+			<div class="inner--slider">
 				<h2 class="best-cuisine__title">The Best Cuisine</h2>
 				<p class="best-cuisine__subtitle">in your town</p>
 				<p class="best-cuisine__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
