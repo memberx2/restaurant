@@ -11,7 +11,8 @@
     "start": "gulp",
     "production": "gulp production",
     "build": "gulp commit",
-    "lint": "standard 'src/js/**/*.js'"
+    "lint": "standard 'src/js/**/*.js'",
+    "test": "standard && node my-tests.js"
   },
   "license": "MIT",
   "devDependencies": {
@@ -71,6 +72,7 @@
   "standard": {
     "ignore": [
       "src/js/vendor/*.js"
-    ]
+    ],
+    "globals": [ "Swiper" ]
   }
 }
