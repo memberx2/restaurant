@@ -1,40 +1,3 @@
-.hero {
-    &__subtitle {
-        font-family: $font_wild_youth;
-        font-size: 50px;
-        line-height: 50px;
-
-        color: $color_gold;
-    }
-    &__title {
-        font-size: 76px;
-        font-weight: 100;
-        line-height: 76px;
-
-        color: $color_white;
-
-        @include media ('<=phone') {
-            font-size: 62px;
-        }
-    }
-    &__adress {
-        position: relative;
-
-        font-size: 16px;
-        font-weight: 100;
-
-        color: $color_white;
-        &:after {
-            position: absolute;
-            top: 50px;
-            left: 50%;
-
-            content: url(../img/arrow.png);
-            transform: translate(-50%);
-        }
-    }
-}
-
 .best-cuisine,
 .welcome,
 .customers-quotes,
@@ -84,6 +47,51 @@
     }
 }
 
+/* ==========================================================================
+   Hero
+   ========================================================================== */
+
+.hero {
+    &__subtitle {
+        font-family: $font_wild_youth;
+        font-size: 50px;
+        line-height: 50px;
+
+        color: $color_gold;
+    }
+    &__title {
+        font-size: 76px;
+        font-weight: 100;
+        line-height: 76px;
+
+        color: $color_white;
+
+        @include media ('<=phone') {
+            font-size: 62px;
+        }
+    }
+    &__adress {
+        position: relative;
+
+        font-size: 16px;
+        font-weight: 100;
+
+        color: $color_white;
+        &:after {
+            position: absolute;
+            top: 50px;
+            left: 50%;
+
+            content: url(../img/arrow.png);
+            transform: translate(-50%);
+        }
+    }
+}
+
+/* ==========================================================================
+   Best cuisine
+   ========================================================================== */
+
 .best-cuisine {
     &__subtitle {
         color: $color_white;
@@ -99,6 +107,10 @@
         color: $color_white;
     }
 }
+
+/* ==========================================================================
+   Organic food
+   ========================================================================== */
 
 .organic-food {
     &__title {
@@ -132,6 +144,10 @@
     }
 }
 
+/* ==========================================================================
+   Welcome
+   ========================================================================== */
+
 .welcome {
     &__title {
         margin-top: 34px;
@@ -149,6 +165,10 @@
         }
     }
 }
+
+/* ==========================================================================
+   History
+   ========================================================================== */
 
 .history {
     &__title {
@@ -179,6 +199,10 @@
         }
     }
 }
+
+/* ==========================================================================
+   Quote section
+   ========================================================================== */
 
 .customers-quotes__quote {
     width: 744px;
@@ -269,32 +293,9 @@
     }
 }
 
-.hours {
-    text-align: center;
-    &__title {
-        &--time {
-            font-family: $font_montserrat;
-            font-size: 15px;
-            font-weight: bold;
-
-            text-transform: uppercase;
-
-            color: $color_black;
-        }
-    }
-    &__subtitle {
-        color: $color_white;
-        &--time {
-            margin-top: 14px;
-
-            font-size: 15px;
-            font-weight: normal;
-            line-height: 25px;
-
-            color: $color_black;
-        }
-    }
-}
+/* ==========================================================================
+   Menu
+   ========================================================================== */
 
 .menu {
     &__subtitle {
@@ -323,6 +324,7 @@
 
             font-size: 15px;
             font-weight: normal;
+
             @include media ('<=1226px') {
                 margin: 40px auto 42px;
             }
@@ -335,49 +337,9 @@
     }
 }
 
-.newsletter {
-    &__title {
-        position: relative;
-
-        font-family: $font_montserrat;
-        font-size: 18px;
-        font-weight: bold;
-        line-height: 18px;
-
-        text-align: center;
-        text-transform: uppercase;
-
-        color: $color_black;
-        &:after {
-            position: absolute;
-            top: 50px;
-            left: 50%;
-
-            content: url(../img/arrow.png);
-            transform: translate(-50%);
-        }
-    }
-}
-
-.ocd {
-    &__subtitle {
-        color: $color_white;
-    }
-}
-
-.ocl {
-    &__subtitle {
-        color: $color_black;
-    }
-    &__description {
-        margin-top: 46px;
-
-        font-size: 15px;
-        font-weight: normal;
-
-        color: $color_black;
-    }
-}
+/* ==========================================================================
+   Our menu
+   ========================================================================== */
 
 .our-menu {
     &__subtitle {
@@ -394,7 +356,7 @@
 
         color: $color_white;
 
-        @include media ('<=1200px') {
+        @include media ('<=phone') {
             width: 100%;
         }
     }
@@ -425,22 +387,68 @@
     }
 }
 
-.quote {
-    font-size: 36px;
-    font-weight: normal;
+/* ==========================================================================
+   Opening hours
+   ========================================================================== */
 
-    color: $color_white;
+.hours {
+    text-align: center;
+    &__title {
+        &--time {
+            font-family: $font_montserrat;
+            font-size: 15px;
+            font-weight: bold;
+
+            text-transform: uppercase;
+
+            color: $color_black;
+        }
+    }
+    &__subtitle {
+        color: $color_white;
+        &--time {
+            margin-top: 14px;
+
+            font-size: 15px;
+            font-weight: normal;
+            line-height: 25px;
+
+            color: $color_black;
+        }
+    }
 }
 
-.signature {
-    margin-top: 10px;
+/* ==========================================================================
+   Our chefs - dark background
+   ========================================================================== */
 
-    font-family: $font_wild_youth;
-    font-size: 45px;
-    font-weight: normal;
-
-    color: $color_gold;
+.ocd {
+    &__subtitle {
+        color: $color_white;
+    }
 }
+
+/* ==========================================================================
+   Our chefs - light background
+   ========================================================================== */
+
+.ocl {
+    &__subtitle {
+        color: $color_black;
+    }
+    &__description {
+        margin-top: 46px;
+
+        font-size: 15px;
+        font-weight: normal;
+
+        color: $color_black;
+    }
+}
+
+/* ==========================================================================
+   Reservation
+   ========================================================================== */
 
 .reservation {
     &__subtitle {
@@ -476,6 +484,55 @@
 
         @include media ('<=phone') {
             width: 100%;
+        }
+    }
+}
+
+/* ==========================================================================
+   Customers
+   ========================================================================== */
+
+.quote {
+    font-size: 36px;
+    font-weight: normal;
+
+    color: $color_white;
+}
+
+.signature {
+    margin-top: 10px;
+
+    font-family: $font_wild_youth;
+    font-size: 45px;
+    font-weight: normal;
+
+    color: $color_gold;
+}
+
+/* ==========================================================================
+   Newsletter
+   ========================================================================== */
+
+.newsletter {
+    &__title {
+        position: relative;
+
+        font-family: $font_montserrat;
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 18px;
+
+        text-align: center;
+        text-transform: uppercase;
+
+        color: $color_black;
+        &:after {
+            position: absolute;
+            top: 50px;
+            left: 50%;
+
+            content: url(../img/arrow.png);
+            transform: translate(-50%);
         }
     }
 }

@@ -48,7 +48,7 @@
         <section class="best-cuisine">
             {{ p_best_cuisine.render() }} 
         </section>
-        <div class="white-icons">      
+        <div class="icons-intersection">      
             {{ p_icons_section.render() }}
         </div>       
         <section class="organic-food">
@@ -117,7 +117,6 @@
                 {{ l_newsletter.render() }}
             </div>
         </section>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="./static/js/app.js"></script>
     </body>
 </html>

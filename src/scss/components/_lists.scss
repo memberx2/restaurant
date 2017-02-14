@@ -2,6 +2,10 @@
    Lists
    ========================================================================== */
 
+/* ==========================================================================
+   Header
+   ========================================================================== */
+
 .header {
     &__navigation {
         display: flex;
@@ -79,41 +83,9 @@
     }
 }
 
-.welcome {
-    &__list {
-        display: flex;
-        flex-direction: row;
-
-        width: 572px;
-        height: 100%;
-
-        justify-content: space-between;
-        @include media ('<=phone') {
-            flex-direction: column;
-
-            width: 100%;
-        }
-        @include media ('>phone','<=1220px') {
-            position: absolute;
-
-            width: 100%;
-            padding: 0 40px;
-        }
-    }
-    &__item {
-        display: block;
-
-        width: 270px;
-        height: 400px;
-
-        background-color: $color_dark_grey_bg;
-
-        @include media ('<=phone') {
-            width: 100%;
-            margin-top: 10px;
-        }
-    }
-}
+/* ==========================================================================
+   Icons intersection
+   ========================================================================== */
 
 .icons {
     &--list {
@@ -121,13 +93,14 @@
         flex-direction: row;
 
         width: 84px;
+        margin: auto 0;
 
         font-size: 15px;
 
         color: $color_black;
 
         justify-content: space-between;
-        .white-icons & {
+        .icons-intersection & {
             width: 154px;
             margin: 0 auto;
 
@@ -136,13 +109,17 @@
     }
     &--link {
         &:hover {
-            .white-icons & {
+            .icons-intersection & {
                 color: $color_gold;
             }
         }
     }
 }
 
+
+/* ==========================================================================
+   Organic food
+   ========================================================================== */
 
 .side-icons {
     &__list {
@@ -207,117 +184,49 @@
     }
 }
 
-.ocd {
-    &__chefs-list {
+/* ==========================================================================
+   Welcome
+   ========================================================================== */
+
+.welcome {
+    &__list {
         display: flex;
         flex-direction: row;
 
-        margin-top: 102px;
+        width: 572px;
+        height: 100%;
 
         justify-content: space-between;
         @include media ('<=phone') {
             flex-direction: column;
 
-            align-items: center;
+            width: 100%;
+        }
+        @include media ('>phone','<=1220px') {
+            position: absolute;
+
+            width: 100%;
+            padding: 0 40px;
         }
     }
-    &__chef {
-        width: 272px;
+    &__item {
+        display: block;
 
-        text-align: center;
+        width: 270px;
+        height: 400px;
 
-        @include media ('<=phone') {
-            margin-bottom: 45px;
-        }
-    }
-    &__chef-name {
-        margin-top: 50px;
-
-        font-family: $font_montserrat;
-        font-size: 16px;
-        font-weight: bold;
-
-        text-transform: uppercase;
-
-        color: $color_white;
-    }
-    &__chef-role {
-        font-size: 15px;
-        line-height: 15px;
-
-        color: $color_gold;
-    }
-    &__chef-description {
-        padding: 0 25px;
-
-        font-size: 15px;
-
-        color: $color_white;
-    }
-}
-
-.ocl {
-    &__chefs-list {
-        display: flex;
-        flex-direction: row;
-
-        margin-top: 102px;
-
-        justify-content: center;
-        @include media ('<=phone') {
-            flex-direction: column;
-
-            align-items: center;
-        }
-    }
-    &__chef {
-        width: 390px;
+        background-color: $color_dark_grey_bg;
 
         @include media ('<=phone') {
             width: 100%;
-        }
-    }
-    &__chef-name {
-        margin-top: 50px;
-
-        font-family: $font_montserrat;
-        font-size: 16px;
-        font-weight: bold;
-
-        text-transform: uppercase;
-
-        color: $color_black;
-    }
-    &__chef-role {
-        margin-top: 5px;
-
-        font-size: 15px;
-
-        color: $color_gold;
-    }
-}
-
-.icons-chefs {
-    &__list {
-        position: relative;
-        left: 50%;
-
-        display: flex;
-        flex-direction: row;
-
-        margin: 50px 0;
-
-        transform: translate(-50%);
-
-        justify-content: space-between;
-        .ocd & {
-            width: 40%;
-        }
-        .ocl & {
-            width: 25%;
+            margin-top: 10px;
         }
     }
 }
+
+/* ==========================================================================
+   Menu
+   ========================================================================== */
 
 .menu {
     &__list--right {
@@ -401,6 +310,10 @@
     }
 }
 
+/* ==========================================================================
+   Our menu
+   ========================================================================== */
+
 .our-menu {
     &__list {
         display: flex;
@@ -435,6 +348,127 @@
         }
         @include media ('>phone','<=1220px') {
             flex-direction: row;
+        }
+    }
+}
+
+
+/* ==========================================================================
+   Our chefs - dark background
+   ========================================================================== */
+
+.ocd {
+    &__chefs-list {
+        display: flex;
+        flex-direction: row;
+
+        margin-top: 102px;
+
+        justify-content: space-between;
+        @include media ('<=phone') {
+            flex-direction: column;
+
+            align-items: center;
+        }
+    }
+    &__chef {
+        width: 272px;
+
+        text-align: center;
+
+        @include media ('<=phone') {
+            margin-bottom: 45px;
+        }
+    }
+    &__chef-name {
+        margin-top: 50px;
+
+        font-family: $font_montserrat;
+        font-size: 16px;
+        font-weight: bold;
+
+        text-transform: uppercase;
+
+        color: $color_white;
+    }
+    &__chef-role {
+        font-size: 15px;
+        line-height: 15px;
+
+        color: $color_gold;
+    }
+    &__chef-description {
+        padding: 0 25px;
+
+        font-size: 15px;
+
+        color: $color_white;
+    }
+}
+
+/* ==========================================================================
+   Our chefs - light background
+   ========================================================================== */
+
+.ocl {
+    &__chefs-list {
+        display: flex;
+        flex-direction: row;
+
+        margin-top: 102px;
+
+        justify-content: center;
+        @include media ('<=phone') {
+            flex-direction: column;
+
+            align-items: center;
+        }
+    }
+    &__chef {
+        width: 390px;
+
+        @include media ('<=phone') {
+            width: 100%;
+        }
+    }
+    &__chef-name {
+        margin-top: 50px;
+
+        font-family: $font_montserrat;
+        font-size: 16px;
+        font-weight: bold;
+
+        text-transform: uppercase;
+
+        color: $color_black;
+    }
+    &__chef-role {
+        margin-top: 5px;
+
+        font-size: 15px;
+
+        color: $color_gold;
+    }
+}
+
+.icons-chefs {
+    &__list {
+        position: relative;
+        left: 50%;
+
+        display: flex;
+        flex-direction: row;
+
+        margin: 50px 0;
+
+        transform: translate(-50%);
+
+        justify-content: space-between;
+        .ocd & {
+            width: 40%;
+        }
+        .ocl & {
+            width: 25%;
         }
     }
 }
